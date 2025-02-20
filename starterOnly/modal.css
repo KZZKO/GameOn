@@ -587,6 +587,32 @@ footer {
 }
 
 .error {
-  font-size: 12px;
+  display: block;
+  margin: 5px 0;
   color: red;
+  font-size: 0.5em;
+}
+
+.success {
+  display: none;
+  height: 700px;
+}
+
+.success p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.success button {
+  font-size: 0.7em;
+  background: #fe142f;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 60px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
