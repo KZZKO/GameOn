@@ -76,8 +76,8 @@ function validate(e) {
   clearError(email, "email-error");
   clearError(birthdate, "birthdate-error");
   clearError(quantity, "quantity-error");
-  clearError(formDataCheckbox, "checkbox-label-1-error");
   clearError(cityRadios[0], "city-error");
+  clearError(formDataCheckbox, "checkbox-label-1-error");
 
   if (first.value.trim() === "") {
     showError(first, "Veuillez saisir votre prénom", "first-error");
@@ -104,7 +104,7 @@ function validate(e) {
 
   // Vérification de la date de naissance
   if (birthdate.value.trim() === "") {
-    showError(birthdate, "Veuillez entrer votre date de naissance", "birthdate-error");
+    showError(birthdate, "Vous devez entrer votre date de naissance.", "birthdate-error");
     isValid = false;
   }
 
@@ -117,7 +117,7 @@ function validate(e) {
   // Vérification de la sélection d'une ville
   const citySelected = Array.from(cityRadios).some((radio) => radio.checked);
   if (!citySelected) {
-    showError(cityRadios[0], "Veuillez sélectionner une ville", "city-error");
+    showError(cityRadios[0], "Vous devez choisir une option.", "city-error");
     isValid = false;
   }
 
@@ -131,7 +131,7 @@ function validate(e) {
   if (isValid) {
     console.log("Formulaire envoyé !");
     form.style.display = "none";
-    success.style.display = "block";
+    success.style.display = "flex";
     form.reset();
   }
 }

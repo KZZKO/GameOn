@@ -595,11 +595,15 @@ footer {
 
 .success {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
   height: 700px;
 }
 
 .success p {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: 1.5em;
@@ -615,4 +619,9 @@ footer {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.success button:hover {
+  background: #cb0f25;
 }
