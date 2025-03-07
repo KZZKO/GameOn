@@ -1,6 +1,11 @@
 function editNav() {
-  var x = document.getElementById("myTopnav");
-  x.classList.toggle("responsive");
+  var x = document.querySelector(".main-navbar-mobile");
+  var y = document.querySelector('.hide-main-navbar-mobile');
+  if (y) {
+    x.className = "main-navbar-mobile show-main-navbar-mobile"
+  } else {
+    x.className = "main-navbar-mobile hide-main-navbar-mobile"
+  }
 }
 
 // DOM Elements
