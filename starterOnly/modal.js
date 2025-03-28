@@ -61,12 +61,14 @@ function showError(input, message, className) {
   span.textContent = message;
   span.className = `error ${className}`;
   input.parentElement.appendChild(span);
+  input.style.outline = "2px solid red";
 }
 
 // Fonction pour retirer les messages d'erreurs
 function clearError(input, className) {
   const error = input.parentElement.querySelector(`.${className}`);
   if (error) error.remove();
+  input.style.outline = "none";
 }
 
 // Fonction de validation

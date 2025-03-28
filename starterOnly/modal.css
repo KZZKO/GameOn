@@ -571,6 +571,8 @@ footer {
   color: red;
 }
 
+
+
 @media screen and (max-width: 768px) {
 
   main {
@@ -670,8 +672,34 @@ footer {
   }
 
   .main-navbar-mobile {
-    background-color: red;
+    background: rgba(255, 255, 255, 0.791);
+    backdrop-filter: blur(3px);
     flex-direction: column;
+    border-radius: 5px;
+  }
+
+  .main-navbar-mobile a {
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    border-top: 0.7px solid red;
+  }
+
+  .main-navbar-mobile a:hover {
+    border: 1.5px solid red;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .main-navbar-mobile a:first-child {
+    background-color: red;
+    color: white;
+    border: 1.5px solid transparent;
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
 
   .show-main-navbar-mobile {
@@ -698,5 +726,13 @@ footer {
     width: 100%;
     margin-top: 20px;
     font-size: 0.53em;
+  }
+
+  .bground {
+    background-color: transparent;
+  }
+
+  .content {
+    margin-top: 90px;
   }
 }
